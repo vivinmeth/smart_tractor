@@ -37,26 +37,8 @@ int pressed = false;
 
 void setup() {
   Serial.begin(9600);// Starts the serial communication
-  Serial.println("=================== Welcome to Raptor T2 ===================");
-  Serial.println("A VivinMeth Product");
-  Serial.println("Version: v2-stable");
-  Serial.println("copyright 2019 VivinMeth .Inc All Rights Reserved ");
-  Serial.println("=============================================================");
-  delay(250);
-  Serial.println("Brain Status:         InActive");
-  delay(250);
-  Serial.println("Engine Status:        InActive");
-  delay(250);
-  Serial.println("Sensory-Nerve Status: InActive");
-  delay(250);
-  Serial.println("Servo Status:         InActive");
-  Serial.println("============================================================");
-  Serial.println("================== Raptor T2 system Setup ===================");
-  Serial.print("Intialising System Setup.");
-  delay(1500);
-  Serial.print(".");
-  delay(1500);
-  Serial.println(".");
+  
+  
   Serial.println("Global Scope Setup complete");
   Serial.print("Intialising Ardiuno PinMode Setup.");
   delay(1500);
@@ -92,19 +74,7 @@ void setup() {
    delay(1500);
  Serial.println(".");
  Serial.println("MotorDriver PinMode Setup complete");
- Serial.println("=============================================================");
-  delay(250);
-  Serial.println("Brain Status:         Active");
-  delay(250);
-  Serial.println("Engine Status:        Active");
-  delay(250);
-  Serial.println("Sensory-Nerve Status: Active");
-  delay(250);
-  Serial.println("Servo Status:         Active");
-  Serial.println("============================================================");
- delay(1500);
- Serial.println("System Setup complete");
- Serial.println("============================================================");
+ 
 }
 void loop() {
 
@@ -222,45 +192,3 @@ float get_dist(){
   return distance;
 }
 
-void console_clr(){
-
-  Serial.println("=================== Welcome to Raptor T2 ===================");
-  Serial.println("A VivinMeth Product");
-  Serial.println("Version: v1-beta");
-  Serial.println("copyright 4518 VivinMeth .Inc All Rights Reserved ");
-  Serial.println("=============================================================");
-  Serial.println("Brain Status:         InActive");
-  Serial.println("Engine Status:        InActive");
-  Serial.println("Sensory-Nerve Status: InActive");
-  Serial.println("Servo Status:         InActive");
-  Serial.println("============================================================");
-  Serial.println("================== Raptor T2 system Setup ===================");
-  Serial.print("Intialising System Setup.");
-  Serial.print(".");
-  Serial.println(".");
-  Serial.println("Global Scope Setup complete");
-  Serial.print("Intialising Ardiuno PinMode Setup.");
-
-  Serial.print(".");
- Serial.println(".");
-
-  Serial.println("Ardiuno PinMode Setup complete");
-  Serial.print("Intialising MotorDriver PinMode Setup.");
-  
- 
-   
- Serial.print(".");
-
-   
- Serial.println(".");
- Serial.println("MotorDriver PinMode Setup complete");
- Serial.println("=============================================================");
-  
-  Serial.println("Brain Status:         Active");
-  Serial.println("Engine Status:        Active");
-  Serial.println("Sensory-Nerve Status: Active");
-  Serial.println("Servo Status:         Active");
-  Serial.println("============================================================");
- Serial.println("System Setup complete");
- Serial.println("============================================================");
-}
